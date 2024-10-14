@@ -1,0 +1,9 @@
+<section class="faq">
+  <h1 class="faq--title">Preguntas frecuentes sobre Bazzar Digital</h1>
+  {% for item in site.data.faq %}
+  <details class="faq--details">
+    <summary class="faq--summary">{{ item.question }}</summary>
+    <p class="faq--content">{{ item.answer }}</p>
+  </details>
+  {% endfor %}
+</section>

@@ -1,0 +1,53 @@
+- title: "Creatividad & Estrategia"
+  img: "linkToImg.png"
+  img2: "linkToImg.png"
+  description: "Nuestro principal valor está en la meticulosa planificación, ejecución de soluciones a medida y la constante optimización que hacemos de cada acción que se planifica. Nuestro enfoque proactivo asegura que tu marca siempre esté un paso por delante, con un claro objetivo, captar clientes y aumentar ventas."
+  button_text: "Reserva una consultoría"
+  subsections:
+    - name: "Estrategia"
+      items:
+        - "Análisis de contenidos"
+        - "Investigación de competencia"
+        - "Definición de objetivos"
+        - "Análisis de audiencia"
+        - "Desarrollo de conceptos"
+        - "Producción de contenido"
+        - "Campañas multicanal"
+    
+    - name: "Comunicación"
+      items:
+        - "Análisis de contenidos"
+        - "Estrategia y propuesta"
+        - "Plan de acción"
+        - "Keyword research"
+        - "Producción de contenido"
+        - "Comunicación adecuada"
+        - "Análisis y optimización"
+
+    - name: "Branding"
+      items:
+        - "Estrategia de marca"
+        - "Naming"
+        - "Diseño identidad visual"
+        - "Manual de marca"
+        - "Estrategia y posicionamiento"
+        - "Brand storytelling"
+        - "Mensaje y tono de voz"
+    
+    - name: "Design"
+      items:
+        - "Diseño gráfico"
+        - "Diseño web a medida"
+        - "Responsive y mobile"
+        - "Mapas de calor"
+        - "Experiencia de usuario"
+        - "Estrategias CRO"
+        - "Customer journey"
+
+  conclusion: "En nuestra agencia creativa combinamos estrategia, innovación y diseño para ofrecer soluciones únicas que impulsan tu marca. Nos dedicamos a crear experiencias únicas a través de un enfoque integral que abarca desde la conceptualización hasta la implementación. Cada proyecto es una oportunidad para nuestro equipo de poder transformar ideas en realidades impactantes, asegurando resultados medibles y sostenibles para un crecimiento constante de tu negocio."
+
+- title: "Desarrollo & Diseño Web"
+  img: "linkToImg.png"
+
+- title: "Video & Animación"
+  img: "linkToImg.png"

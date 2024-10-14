@@ -1,0 +1,21 @@
+<section class="resume">
+  <header class="resume--header">
+    <h1 class="resume--title">Marketing orientado a resultados</h1>
+    <p class="resume--content resume--content-blue">Impulsamos tu éxito digital con estrategias personalizadas e integrales.</p>
+    <p class="resume--content">Cada acción está enfocada en obtener resultados tangibles, adaptándonos a las necesidades específicas de tu negocio para maximizar el rendimiento y el retorno de inversión</p>
+  </header>
+  
+  <div class="resume--cardList">
+    {% for item in site.data.resume %}
+      <div class="resume--card">
+        <img class="resume--cardIcon" src="/assets/img/icons/{{item.icon}}">
+        <div class="resume--cardContent">
+          <img class="resume--cardPlus" src="/assets/img/icons/iconPlus.png">
+          <h2 class="resume--cardHeader">{{item.header}}</h2>
+        </div>
+        <p class="resume--cardDescription">{{item.description}}</p>
+      </div>
+    {% endfor %}
+  </div>
+  <a class="resume--cta" href="https://wa.me/50585679865?text=Estoy%20interesado%20en%20los%20servicios%20de%20Bazzar%20Digital">Reserva tu consultoría gratuita</a>
+</section>

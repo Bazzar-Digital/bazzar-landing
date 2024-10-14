@@ -1,0 +1,12 @@
+- client: "Mariana Jimenez"
+  role: "Owner, Agencia de envío de paquetería"
+  message: "Bazzar ofrece un servicio excepcional. Las estrategias de marketing digital altamente receptivas y eficaces han impulsado el tráfico y las conversiones de nuestra cuenta."
+  img: "/assets/img/Ellipse42.png" # dejar vacío
+- client : "Elba Baltodano"
+  role: "Owner, empresa Multimedia"
+  message: "Bazzar mejoró significativamente nuestra presencia online. Desde el diseño del sitio web hasta las campañas de PPC, ofrecen resultados extraordinarios. ¡Altamente recomendado!"
+  img: "/assets/img/Ellipse43.png"
+- client: "Aldo Sebatian"
+  role: "Customer success manager"
+  message: "Muy satisfechos con el trabajo de Bazzar. Han mejorado la visibilidad de nuestra marca en Internet y nos han proporcionado información muy valiosa. Muchas gracias."
+  img: "/assets/img/Ellipse44.png"
