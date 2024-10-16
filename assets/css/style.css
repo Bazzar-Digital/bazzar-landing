@@ -325,3 +325,22 @@ body{
   display: flex;
   justify-content: space-between;
 }
+
+.post {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.post h1, .post h2, .post h3 {
+  color:#1d43a2;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.post hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1d43a2;
+}
