@@ -1,9 +1,28 @@
-<nav class="nav">
-  <p><img class="nav--brand" src="/assets/img/logos/logoBazzar.png"/></p>
-  <ul class="nav--menu">
-    <li class="nav--item"><a class="nav--link" href="/">Inicio</a></li>
-    <li class="nav--item"><a class="nav--link" href="#">Servicios</a></li>
-    <li class="nav--item"><a class="nav--link" href="#">FAQ</a></li>
-  </ul>
-  <a href="https://wa.me/50585679865?text=Estoy%20interesado%20en%20los%20servicios%20de%20Bazzar%20Digital" class="nav--whatsapp"><img class="nav--whatsapp-icon" src="/assets/img/icons/iconWhatsapp.png">Chat por Whatsapp</a>
-</nav>
+<div x-data="{open: false}">
+  <nav class="nav" x-bind:class="open ? 'nav-mobile--hidden' : ''">
+    <p><img class="nav--brand" src="/assets/img/logos/logoBazzar.png"/></p>
+    <ul class="nav--menu">
+      <li class="nav--item"><a class="nav--link" href="/">Inicio</a></li>
+      <li class="nav--item"><a class="nav--link" href="#">Servicios</a></li>
+      <li class="nav--item"><a class="nav--link" href="#">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/50585679865?text=Estoy%20interesado%20en%20los%20servicios%20de%20Bazzar%20Digital" class="nav--whatsapp"><img class="nav--whatsapp-icon" src="/assets/img/icons/iconWhatsapp.png">Chat por Whatsapp</a>
+    <button class="hamburguer" type="button" x-on:click="open = ! open">
+      <img class="hamburguer__img" src="/assets/img/icons/iconHamburguer.png">
+    </button>
+  </nav>
+  <nav class="nav-mobile" x-bind:class="!open ? 'nav-mobile--hidden' : ''">
+    <div class="nav-mobile__bar">
+      <a href="/"><img src="/assets/img/logos/bazzarIsologo.png"></a>
+      <button class="hamburguer" type="button" x-on:click="open = ! open">
+        <img class="hamburguer__img" src="/assets/img/icons/iconClose.png">
+      </button>
+    </div>
+    <ul class="nav-mobile--menu">
+      <li class="nav-mobile--item"><a class="nav-mobile--link" href="/">Inicio</a></li>
+      <li class="nav-mobile--item"><a class="nav-mobile--link" href="#">Servicios</a></li>
+      <li class="nav-mobile--item"><a class="nav-mobile--link" href="#">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/50585679865?text=Estoy%20interesado%20en%20los%20servicios%20de%20Bazzar%20Digital" class="nav-mobile--whatsapp"><img class="nav-mobile--whatsapp-icon" src="/assets/img/icons/iconWhatsapp.png">Chat por Whatsapp</a>
+  </nav>
+</div>

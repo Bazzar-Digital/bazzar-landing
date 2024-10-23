@@ -18,6 +18,9 @@ body{
   padding-right: 40px;
   height: 64px;
 }
+.nav--hidden {
+  display: none;
+}
 .nav--brand {
   display: block;
   max-width: 64px;
@@ -58,6 +61,18 @@ body{
   width: 24px;
 }
 
+.hamburguer {
+  display: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+.hamburguer__img {
+  display: none;
+  width: 100%;
+  margin: auto;
+}
 
 .hero {
   background-color: #fbebd7;
@@ -343,4 +358,72 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
   color: #1d43a2;
+}
+
+.nav-mobile {
+  display: none;
+}
+.nav-mobile--whatsapp {
+  display: flex;
+  width: 200px;
+  margin: auto;
+  align-items: center;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 12px;
+}
+.nav-mobile--whatsapp-icon {
+  display: block;
+  margin-right: 6px;
+  width: 24px;
+}
+@media only screen and (max-width: 620px) {
+  .nav-mobile {
+    display: block;
+    background-color: #e2e7f6;
+    padding-bottom: 20px;
+  }
+  .nav-mobile__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+  }
+  .nav-mobile--item {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 12px;
+    font-weight: 600;
+  }
+  .nav-mobile--link {
+    color: black;
+    text-decoration: none;
+  }
+  .nav-mobile--hidden {
+    display: none;
+  }
+  
+  .hamburguer {
+    display: block;
+  }
+  .hamburguer__img {
+    display: block;
+  }
+  .nav--menu {
+    display: none;
+  }
+  .nav--whatsapp {
+    display: none;
+  }
+  .footer--content {
+    flex-direction: column;
+  }
 }
