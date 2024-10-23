@@ -1,14 +1,14 @@
 <section class="testimonial">
   {% for item in site.data.testimonial %}
-  <div class="testimonial--item">
-    <div class="testimonial--title">
-      <img class="testimonial--img" src="{{ item.img }}">
+  <div class="testimonial__item">
+    <div class="testimonial__title">
+      <img class="testimonial__img" src="{{ item.img }}">
       <div>
-        <h1 class="testimonial--client"> {{ item.client }}</h1>
-        <p class="testimonial--role"> {{ item.role }}</p>
+        <h1 class="testimonial__client"> {{ item.client }}</h1>
+        <p class="testimonial__role"> {{ item.role }}</p>
       </div>
     </div>
-    <p class="testimonial--message"> {{ item.message }}</p>
+    <p class="testimonial__message"> {{ item.message }}</p>
   </div>
 
   {% endfor %}
