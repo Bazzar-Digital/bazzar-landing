@@ -1,4 +1,5 @@
 <section class="faq">
+  <div class="faq__container">
   <h1 class="faq__title">Preguntas frecuentes sobre Bazzar Digital</h1>
   {% for item in site.data.faq %}
   <details class="faq__details">
@@ -6,4 +7,5 @@
     <p class="faq__content">{{ item.answer }}</p>
   </details>
   {% endfor %}
+  </div>
 </section>

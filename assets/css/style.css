@@ -8,6 +8,9 @@
 body{
   background-color: #f8f9ff;
 }
+h1, h2,h3,h4,p{
+  text-wrap: balance;
+}
 
 /* BLOCK nav */
 
@@ -19,6 +22,11 @@ body{
   padding-left: 40px;
   padding-right: 40px;
   height: 64px;
+  background-color: #f8f9ff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
 }
 .nav--hidden {
   display: none;
@@ -56,6 +64,10 @@ body{
   text-decoration: none;
   font-weight: 550;
   font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.nav__whatsapp:hover {
+  box-shadow: 0px 0px 12px #999;
 }
 .nav__whatsapp-icon {
   display: block;
@@ -70,6 +82,10 @@ body{
   background-color: #e2e7f6;
   border-bottom: 1px solid #999;
   padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
   
 }
 .nav-mobile--closed {
@@ -134,18 +150,23 @@ body{
 /* BLOCK  hero */
 .hero {
   background-color: #fbebd7;
+  padding: 20px;
+  height: 100vh;
+}
+.hero__container {
+  max-width: 800px;
+  margin: auto;
   display: flex;
   align-items: center;
-  padding: 20px;
 }
 
 .hero__content {
-  padding: 40px;
+  padding: 20px;
   max-width: 50%;
 }
 
 .hero__title {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .hero__title-blue {
@@ -154,24 +175,33 @@ body{
 
 .hero__description {
   margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .hero__action {
   display: inline-block;
   background-color: #1d43a2;
-  padding: 12px;
-  margin: 6px;
-  border-radius: 8px;
+  padding: 25px 50px 25px 50px;
+  border-radius: 20px;
   color: white;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.hero__action:hover {
+  box-shadow: 0px 0px 12px #999;
 }
 .hero__bg {
+  width: 50%;
   margin: auto;
 }
 
 .why-choose-us {
   display: flex;
-  padding: 40px;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  /*height: 500px;*/
 }
 .why-choose-us__img {
   max-width: 340px;
@@ -186,11 +216,16 @@ body{
 .why-choose-us__item {
   display: flex;
   align-items: center;
-  background-color: #0c1b42;
+  background-color: #bccbf3;
   margin: 20px;
   padding: 20px;
   border-radius: 12px;
+  transition: all 0.3s ease-in-out;
 }
+.why-choose-us__item:hover {
+  box-shadow: 0px 0px 8px black;
+}
+
 .why-choose-us__icon {
   background-color: #3564db;
   width: 64px;
@@ -199,7 +234,7 @@ body{
   margin-right: 32px;
 }
 .why-choose-us__text {
-  color: white;
+  color: black;
 }
 
 .resume {
@@ -207,6 +242,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .resume__header {
@@ -217,8 +254,12 @@ body{
 .resume__title {
   color: #0c1b42;
 }
+.resume__content {
+  line-height: 1.5;
+}
 .resume__content-blue {
   color: #3564db;
+  line-height: 2;
 }
 
 .resume__cardList {
@@ -227,31 +268,41 @@ body{
   flex-wrap: wrap;
 }
 .resume__card {
+  position:relative;
   padding: 20px;
-  max-width: 360px;
+  max-width: 300px;
+  transition: all 0.3s ease-in-out;
+  bottom: 0;
+}
+.resume__card:hover{
+  bottom: 10px;
 }
 .resume__cardIcon {
   position: relative;
   line-height: 0;
-  top: 72px;
+  top: 82px;
   left: 16px;
-  width: 128px;
+  width: 160px;
   margin-top: -64px;
 }
 .resume__cardContent {
   background-color: #fbebd7;
   display: flex;
+  justify-content: start;
   padding: 20px;
   padding-top: 80px;
   line-height: 1;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  height: 150px;
 }
 .resume__cardPlus {
+  display: block;
   width: 32px;
   margin: auto;
 }
 .resume__cardHeader {
+  font-size: 1.5rem;
   color: #0c1b42;
   font-size: 24px;
 }
@@ -260,6 +311,8 @@ body{
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 20px;
+  line-height: 1.5;
+  height: 120px;
 }
 .resume__cta {
   background-color: #3564db;
@@ -270,12 +323,17 @@ body{
   text-decoration: none;
   color: white;
   margin: 12px;
-
+  transition: all 0.3s ease-in-out;
+}
+.resume__cta:hover {
+  box-shadow: 0px 0px 12px #999;
 }
 .companies {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  max-width: 800px;
+  margin: auto;
 }
 .companies__title {
   font-size: 18px;
@@ -296,11 +354,16 @@ body{
 .companies__logo {
   max-width: 128px;
   margin: auto;
+  padding: 20px;
 }
 
 .faq {
   background-color: #c3e2f0;
   padding: 40px;
+}
+.faq__container {
+  max-width: 800px;
+  margin: auto;
 }
 .faq__title {
   text-align: center;
@@ -312,11 +375,13 @@ body{
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 6px;
+  margin-bottom: 20px;
 }
 .faq__summary {
   color: #523f0f;
   font-weight: 600;
   font-size: 24px;
+  cursor: pointer;
 }
 .faq__summary::marker {
   color: #0E0729;
@@ -324,22 +389,33 @@ body{
 .faq__content {
   color: #060e21;
   font-size: 16px;
+  padding-top: 12px;
 }
 
 .testimonial {
   background: linear-gradient(#dbac36, #e6c777);
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 20px;
+}
+.testimonial__header {
+  color: #0c1b42;
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+.testimonial__slider {
+  width: 100vw;
+  height: 400px;
 }
 .testimonial__item {
   background-color: #fbebd7;
   width: 360px;
-  padding: 30px;
-  margin: 12px;
+  height: 300px;
+  position: relative;
+  top: 50px;
+  padding: 20px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  margin: auto;
 }
 .testimonial__title {
   display: flex;
@@ -355,6 +431,9 @@ body{
   background-color: #0c1b42;
   color: white;
   padding: 40px;
+}
+.footer__title {
+  height: 66px;
 }
 .footer__content {
   display: flex;
@@ -389,6 +468,9 @@ body{
   text-decoration: none;
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: start;
+  gap: 8px;
   padding: 0;
   margin-bottom: 12px;
 }
@@ -396,6 +478,7 @@ body{
   margin-right: 8px;
 }
 .footer__copy {
+  margin: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -457,6 +540,9 @@ body{
     display: flex;
     flex-direction: column;
   }
+  .hero__container {
+    display: block;
+  }
   .hero__content {
     display: flex;
     flex-direction: column;
@@ -479,19 +565,6 @@ body{
   }
   .why-choose-us{
     flex-direction: column;
-  }
-  .testimonial {
-    overflow: scroll;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    justify-content: start;
-  }
-  .testimonial__item {
-    display: block;
-    flex-shrink: 0;
-    width: 400px;
   }
   .footer__content {
     flex-direction: column;

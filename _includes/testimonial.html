@@ -1,15 +1,19 @@
 <section class="testimonial">
-  {% for item in site.data.testimonial %}
-  <div class="testimonial__item">
-    <div class="testimonial__title">
-      <img class="testimonial__img" src="{{ item.img }}">
-      <div>
-        <h1 class="testimonial__client"> {{ item.client }}</h1>
-        <p class="testimonial__role"> {{ item.role }}</p>
+  <h1 class="testimonial__header">Lo que dicen nuestros clientes</h1>
+  <swiper-container class="testimonial__slider" slides-per-view="1" speed="300" loop="true" pagination="true">
+    {% for item in site.data.testimonial %}
+    <swiper-slide>
+      <div class="testimonial__item">
+        <div class="testimonial__title">
+          <img class="testimonial__img" src="{{ item.img }}">
+          <div>
+            <h1 class="testimonial__client"> {{ item.client }}</h1>
+            <p class="testimonial__role"> {{ item.role }}</p>
+          </div>
+        </div>
+        <p class="testimonial__message"> {{ item.message }}</p>
       </div>
-    </div>
-    <p class="testimonial__message"> {{ item.message }}</p>
-  </div>
-
-  {% endfor %}
+    </swiper-slide>
+    {% endfor %}
+  </swiper-container>
 </section>
