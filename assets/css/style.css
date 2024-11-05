@@ -567,9 +567,11 @@ h1, h2,h3,h4,p{
   padding: 20px;
   margin: auto;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card {
-  width: 350px;
+  width: 340px;
   margin: 20px;
 }
 .card__title {
@@ -596,6 +598,7 @@ h1, h2,h3,h4,p{
 }
 .cards2 {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
@@ -657,5 +660,8 @@ h1, h2,h3,h4,p{
   }
   .footer__section {
     width: 100%;
+  }
+  .card__content {
+    min-height: auto;
   }
 }
