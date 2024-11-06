@@ -1,10 +1,12 @@
 <nav class="nav">
-  <p><img class="nav__brand" src="/assets/img/logos/logoBazzar.png"/></p>
+  <div class="nav__container">
+    <p><img class="nav__brand" src="/assets/img/logos/logoBazzar.png"/></p>
   <ul class="nav__menu">
     <li class="nav__item"><a class="nav__link" href="/">Inicio</a></li>
     <li class="nav__item"><a class="nav__link" href="/about.html">Nosotros</a></li>
-    <li class="nav__item"><a class="nav__link" href="#">Servicios</a></li>
-    <li class="nav__item"><a class="nav__link" href="#">FAQ</a></li>
+    <li class="nav__item"><a class="nav__link" href="https://www.behance.net/Bazzardigital">Proyectos</a></li>
+    <li class="nav__item"><a class="nav__link" href="/#servicios">Servicios</a></li>
+    <li class="nav__item"><a class="nav__link" href="/#faq">FAQ</a></li>
   </ul>
   <a
     href="https://wa.me/50585679865?text=Estoy%20interesado%20en%20los%20servicios%20de%20Bazzar%20Digital" 
@@ -12,6 +14,7 @@
     <img class="nav__whatsapp-icon" src="/assets/img/icons/iconWhatsapp.png">
     Chat por Whatsapp
   </a>
+  </div>
 </nav>
 
 <nav class="nav-mobile" x-data="{open: false}" x-bind:class="!open ? 'nav-mobile--closed' : ''">
