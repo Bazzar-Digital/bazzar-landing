@@ -1,12 +1,34 @@
-- client: "Mariana Jimenez"
-  role: "Owner, Agencia de envío de paquetería"
-  message: "Bazzar ofrece un servicio excepcional. Las estrategias de marketing digital altamente receptivas y eficaces han impulsado el tráfico y las conversiones de nuestra cuenta."
-  img: "/assets/img/Ellipse42.png" # dejar vacío
-- client : "Elba Baltodano"
-  role: "Owner, empresa Multimedia"
-  message: "Bazzar mejoró significativamente nuestra presencia online. Desde el diseño del sitio web hasta las campañas de PPC, ofrecen resultados extraordinarios. ¡Altamente recomendado!"
-  img: "/assets/img/Ellipse43.png"
-- client: "Aldo Sebatian"
-  role: "Customer success manager"
+- client: Aldo S.
+  role: Customer Success Manager
+  location: Austin, TX
   message: "Muy satisfechos con el trabajo de Bazzar. Han mejorado la visibilidad de nuestra marca en Internet y nos han proporcionado información muy valiosa. Muchas gracias."
   img: "/assets/img/Ellipse44.png"
+
+- client: Mariana J.
+  role: Envío de Paquetería USA-Nicaragua
+  message: "Bazzar ofrece un servicio excepcional. Las estrategias de marketing digital altamente receptivas y eficaces han impulsado el tráfico y las conversiones de nuestra cuenta."
+  img: "/assets/img/Ellipse42.png"
+
+- client: Andrea P.
+  role: Gerente de Pyme
+  location: Tampa, FL
+  message: "Nuestras interacciones y seguidores han crecido un 150% en solo seis meses. Ahora conectamos de manera real con nuestro público objetivo, en lugar de simplemente aumentar los números. Es un equipo comprometido y con una visión clara."
+  img: "/assets/img/Ellipse44.png"
+
+- client: Elba B.
+  role: Multimedia Specialist
+  location: Managua, NI
+  message: "Bazzar mejoró significativamente nuestra presencia online. Desde el diseño del sitio web hasta las campañas de PPC, ofrecen resultados extraordinarios. ¡Altamente recomendado!"
+  img: "/assets/img/Ellipse43.png"
+
+- client: Samantha L.
+  role: E-commerce Manager
+  location: Fort Lauderdale, FL
+  message: "Nuestro tiempo de permanencia en el sitio ha mejorado un 40% y las conversiones han aumentado significativamente. Definitivamente recomendaría a cualquier empresa que busque mejorar su UX trabajar con ellos."
+  img: "/assets/img/Ellipse42.png"
+
+- client: Carlos J.
+  role: Director de una Clínica de Salud
+  location: Miami, FL
+  message: "En los primeros tres meses, hemos logrado captar clientes clave en el sur de la Florida. La transparencia y conocimiento del equipo de Bazzar fueron clave para el éxito de la campaña."
+  img: "/assets/img/Ellipse43.png"
