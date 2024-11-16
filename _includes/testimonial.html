@@ -1,6 +1,6 @@
 <section class="testimonial">
   <h1 class="testimonial__header">Lo que dicen nuestros clientes</h1>
-  <swiper-container class="testimonial__slider" slides-per-view="1" autoplay="" speed="300" loop="true" pagination="true">
+  <swiper-container id="swiper" class="testimonial__slider" slides-per-view="3" autoplay="" speed="300" loop="true" pagination="true">
     {% for item in site.data.testimonial %}
     <swiper-slide>
       <div class="testimonial__item">
@@ -16,4 +16,15 @@
     </swiper-slide>
     {% endfor %}
   </swiper-container>
+  <script>
+    const mql = window.matchMedia("(max-width: 1200px)");
+    const swiper = document.querySelector("#swiper");
+    mql.onchange = (e) => {
+      if (e.matches) {
+        swiper.setAttribute("slides-per-view", "1")
+      } else {
+        swiper.setAttribute("slides-per-view", "3")
+      }
+    };
+  </script>
 </section>
