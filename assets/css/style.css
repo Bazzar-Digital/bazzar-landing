@@ -724,13 +724,16 @@ body{
   margin-top: 60px;
 }
 .service-card2 {
-  width: 270px;
+  width: 100%;
   border-radius: 20px;
   padding: 20px;
-  height: 200px;
   font-size: 0.75rem;
   background-color: white;
   box-shadow: 0px 0px 8px #bbb;
+}
+.service-card2 summary {
+  font-size: 1rem;
+  font-weight: 800;
 }
 .service-card2__item {
   list-style-position: inside;

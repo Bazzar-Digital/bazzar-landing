@@ -17,8 +17,8 @@ title: Servicios
       </div>
     </div>
     <div class="service-cards">
-      <div class="service-card2">
-        <h2>Estrategia</h2>
+      <details class="service-card2" open>
+        <summary>Estrategia</summary>
         <ul>
           <li class="service-card2__item">Análisis de contenidos</li>
           <li class="service-card2__item">Investigación de competencia</li>
@@ -28,9 +28,9 @@ title: Servicios
           <li class="service-card2__item">Producción de contenido</li>
           <li class="service-card2__item">Campañas multicanal</li>
         </ul>
-      </div>
-      <div class="service-card2">
-        <h2>Comunicación</h2>
+      </details>
+      <details class="service-card2">
+        <summary>Comunicación</summary>
         <ul>
           <li class="service-card2__item">Análisis de contenidos</li>
           <li class="service-card2__item">Estrategia y propuesta</li>
@@ -40,9 +40,9 @@ title: Servicios
           <li class="service-card2__item">Comunicación adecuada</li>
           <li class="service-card2__item">Análisis y optimización</li>
         </ul>
-      </div>
-      <div class="service-card2">
-        <h2>Branding</h2>
+      </details>
+      <details class="service-card2">
+        <summary>Branding</summary>
         <ul>
           <li class="service-card2__item">Estrategia de marca</li>
           <li class="service-card2__item">Naming</li>
@@ -52,9 +52,9 @@ title: Servicios
           <li class="service-card2__item">Brand storytelling</li>
           <li class="service-card2__item">Mensaje y tono de voz</li>
         </ul>
-      </div>
-      <div class="service-card2">
-        <h2>Design</h2>
+      </details>
+      <details class="service-card2">
+        <summary>Design</summary>
         <ul>
           <li class="service-card2__item">Diseño gráfico</li>
           <li class="service-card2__item">Diseño web a medida</li>
@@ -65,7 +65,22 @@ title: Servicios
           <li class="service-card2__item">Customer journey</li>
         </ul>
       </div>
-    </div>
+    </details>
+    <script>
+      document.querySelectorAll("details").forEach((detail) => {
+      detail.addEventListener("toggle", function () {
+        if (this.open) {
+          // Cerrar todos los demás <details> excepto el actual
+          document.querySelectorAll("details").forEach((otherDetail) => {
+            if (otherDetail !== this) {
+              otherDetail.open = false;
+            }
+          });
+        }
+      });
+    });
+
+    </script>
   </div>
   <div class="container">
     <div class="service-description">
@@ -236,13 +251,21 @@ title: Servicios
   <script>
     const mql = window.matchMedia("(max-width: 900px)");
     const swiper = document.querySelector("#swiper");
-    mql.onchange = (e) => {
-      if (e.matches) {
-        swiper.setAttribute("slides-per-view", "1")
+
+    // Función para cambiar el atributo según el ancho de pantalla
+    function updateSlidesPerView() {
+      if (mql.matches) {
+        swiper.setAttribute("slides-per-view", "1");
       } else {
-        swiper.setAttribute("slides-per-view", "3")
+        swiper.setAttribute("slides-per-view", "3");
       }
-    };
+    }
+
+    // Ejecuta la función al cargar la página
+    updateSlidesPerView();
+
+    // Ejecuta la función cuando el ancho de pantalla cambie
+    mql.onchange = updateSlidesPerView;
   </script>
 </section>
 <section class="service-eighth container" >
@@ -292,12 +315,20 @@ title: Servicios
   <script>
     const mql2 = window.matchMedia("(max-width: 900px)");
     const swiper2 = document.querySelector("#swiper2");
-    mql2.onchange = (e) => {
-      if (e.matches) {
-        swiper2.setAttribute("slides-per-view", "1")
+
+    // Función para cambiar el atributo según el ancho de pantalla
+    function updateSlidesPerView2() {
+      if (mql2.matches) {
+        swiper2.setAttribute("slides-per-view", "1");
       } else {
-        swiper2.setAttribute("slides-per-view", "3")
+        swiper2.setAttribute("slides-per-view", "3");
       }
-    };
+    }
+
+    // Ejecuta la función al cargar la página
+    updateSlidesPerView2();
+
+    // Ejecuta la función cuando el ancho de pantalla cambie
+    mql2.onchange = updateSlidesPerView2;
   </script>
 </section>
