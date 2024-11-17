@@ -234,13 +234,13 @@ title: Servicios
   </div>
   
   <script>
-    const mql = window.matchMedia("(max-width: 1200px)");
+    const mql = window.matchMedia("(max-width: 900px)");
     const swiper = document.querySelector("#swiper");
     mql.onchange = (e) => {
       if (e.matches) {
-        swiper.setAttribute("slides-per-view", "2")
-      } else {
         swiper.setAttribute("slides-per-view", "1")
+      } else {
+        swiper.setAttribute("slides-per-view", "3")
       }
     };
   </script>
@@ -290,13 +290,13 @@ title: Servicios
   <p class="service-eighth__text service-eight__text--join">Las culturas de innovación sostenible requieren propósito, estrategia, recursos y liderazgo</p>
   <img src="/assets/img/Innovation.png" class="service-eighth__img">
   <script>
-    const mql = window.matchMedia("(max-width: 1200px)");
+    const mql2 = window.matchMedia("(max-width: 900px)");
     const swiper2 = document.querySelector("#swiper2");
-    mql.onchange = (e) => {
+    mql2.onchange = (e) => {
       if (e.matches) {
-        swiper.setAttribute("slides-per-view", "2")
+        swiper2.setAttribute("slides-per-view", "1")
       } else {
-        swiper.setAttribute("slides-per-view", "1")
+        swiper2.setAttribute("slides-per-view", "3")
       }
     };
   </script>
