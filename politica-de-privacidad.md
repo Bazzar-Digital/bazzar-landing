@@ -186,9 +186,8 @@ Es posible que actualicemos esta política de privacidad de vez en cuando. La ve
 
 ### ¿CÓMO PUEDE PONERSE EN CONTACTO CON NOSOTROS EN RELACIÓN CON ESTA POLÍTICA?
 
-Si tiene preguntas o comentarios sobre esta política, envíe un correo electrónico a Jorge Alvarado a **jorgealvarado@bazzar.digtal** o por correo postal a:
+Si tiene preguntas o comentarios sobre esta política, envíe un correo electrónico a Jorge Alvarado a **jorge@bazzar.digtal** o por correo postal a:
 
 **Jorge Alvarado**  
-Growth Partner  
-Valle Dorado, 12023  
+Growth Partner   
 Managua, Nicaragua
